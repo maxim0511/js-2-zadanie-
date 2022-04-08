@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$color-green:green;
+$padding-top-content:15%;
+
+%center{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+%search{
+    border-radius: 5px;
+    font-size: 18px;
+    height: 30px;
+}
+
+
+body {
+    .header {
+        background-color: #e2e2e2;
+        height: 70px;
+        display: flex;
+        font-size: 50px;
+        padding-left: 1%;
+        .header_search {
+            width: 90%;
+            @extend %center;
+            .header_search_Input{
+                padding-left: 0.5%;
+                width: 250px;
+                @extend %search;
+                border: 0;
+            }
+            .header_search_btn{
+                margin-left: 1%;
+                @extend %search;
+                width: 80px;
+                background-color: transparent;
+                border: 2px solid $color-green;
+                color: $color-green;
+            }
+        }
+    }
+    .content {
+        margin-top: 5%;
+        margin-left: 5%;
+        .content_container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            grid-gap: 3em;
+            margin-bottom: 3%;
+            .content_item{
+                background-color: #e2e2e2;
+                width: 80%;
+                text-align: center;
+                margin-bottom: 10%;
+                .name{
+                    padding-top: $padding-top-content;
+                    font-style: italic;
+                    font-size: 18px;
+                    color: $color-green;
+                    letter-spacing: 5px;
+                    height: 100px;
+                }
+                .img{
+                    padding-top: $padding-top-content;
+                    width: 200px;
+                }
+                div:last-of-type{
+                    width: 80%;
+                    margin-left: 10%;
+                    @extend %center;
+                    .description{
+                        padding-top: 5%;
+                        padding-bottom: 5%;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .NoItem {
+            margin-left: -5%;
+            font-size: 35px;
+            width: 100%;
+            @extend %center;
+        }
+    }
+}

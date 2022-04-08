@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .header .header_search, body .content .content_container .content_item div:last-of-type, body .content .NoItem {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body .header .header_search .header_search_Input, body .header .header_search .header_search_btn {
+  border-radius: 5px;
+  font-size: 18px;
+  height: 30px;
+}
+
+body .header {
+  background-color: #e2e2e2;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 50px;
+  padding-left: 1%;
+}
+
+body .header .header_search {
+  width: 90%;
+}
+
+body .header .header_search .header_search_Input {
+  padding-left: 0.5%;
+  width: 250px;
+  border: 0;
+}
+
+body .header .header_search .header_search_btn {
+  margin-left: 1%;
+  width: 80px;
+  background-color: transparent;
+  border: 2px solid green;
+  color: green;
+}
+
+body .content {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+body .content .content_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3em;
+  margin-bottom: 3%;
+}
+
+body .content .content_container .content_item {
+  background-color: #e2e2e2;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+body .content .content_container .content_item .name {
+  padding-top: 15%;
+  font-style: italic;
+  font-size: 18px;
+  color: green;
+  letter-spacing: 5px;
+  height: 100px;
+}
+
+body .content .content_container .content_item .img {
+  padding-top: 15%;
+  width: 200px;
+}
+
+body .content .content_container .content_item div:last-of-type {
+  width: 80%;
+  margin-left: 10%;
+}
+
+body .content .content_container .content_item div:last-of-type .description {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 15px;
+}
+
+body .content .NoItem {
+  margin-left: -5%;
+  font-size: 35px;
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */
