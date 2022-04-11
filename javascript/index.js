@@ -40,28 +40,22 @@ const getContent = async(query='a',page=1)=>{
         console.log(error);
     }
 }
-if (paramSearch.value == ''){
-    getContent()
-} else {
-    getContent(paramSearch.value)
+function valueSearch(){
+    if (paramSearch.value == ''){
+        getContent()
+    } else {
+        getContent(paramSearch.value)
+    }
 }
+valueSearch()
 
 const NewContent = ()=>{
-    setTimeout(()=>{
         htmlContent='';
-        if(paramSearch.value==''){
-            getContent()
-        }else {
-            getContent(paramSearch.value)
-        }
-    },2000)
+        valueSearch();
 }
+
 btn.addEventListener('click',()=>{
-    if(paramSearch.value == ''){
-        getContent('a');
-    }else {
-        getContent(paramSearch.value);
-    }
+    valueSearch();
 });
 document.addEventListener('scroll',scrollContent);
 btn.removeEventListener('click');
