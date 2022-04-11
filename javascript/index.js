@@ -54,9 +54,7 @@ const NewContent = ()=>{
         valueSearch();
 }
 
-btn.addEventListener('click',()=>{
-    valueSearch();
-});
+btn.addEventListener('click',valueSearch());
 document.addEventListener('scroll',scrollContent);
-btn.removeEventListener('click');
+btn.removeEventListener('click',valueSearch());
 document.removeEventListener('scroll',scrollContent);
