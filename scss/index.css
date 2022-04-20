@@ -103,4 +103,18 @@ body .content .NoItem {
   font-size: 35px;
   width: 100%;
 }
+
+body .content .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .content .pagination .pag_item {
+  width: 50px;
+  height: 35px;
+}
 /*# sourceMappingURL=index.css.map */

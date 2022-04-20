@@ -89,5 +89,13 @@ body {
             width: 100%;
             @extend %center;
         }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            .pag_item {
+                width: 50px;
+                height: 35px;
+            }
+        }
     }
 }
